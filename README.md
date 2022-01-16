@@ -13,11 +13,11 @@ This project contains the following maps:
 Set up conda environment by running: 
 `conda create --name <env> --file requirements.txt`
 
-Run the following commands:
-`python etl.py`
-`python feature_engineering.py`
+Run the following commands
+`python etl.py`,
+`python feature_engineering.py` and
 `python train_evaluate_model.py`
 
-Additionaly, the predictions are available via a REST API. Run:
+Additionaly, the predictions are available via a REST API. Run
 `python app.py`
 and the predictions are visible by performing a GET request

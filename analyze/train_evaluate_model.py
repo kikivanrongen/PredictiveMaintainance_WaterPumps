@@ -4,6 +4,7 @@ import logging
 
 import pandas as pd
 import numpy as np
+import pickle as pkl
 import seaborn as sns 
 import matplotlib.pyplot as plt
 
@@ -11,9 +12,13 @@ from xgboost import XGBClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix
 
-logging.basicConfig(filename='log.log', filemode='a', level=logging.INFO, format='%(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='analyze/log.log', filemode='a', level=logging.INFO, format='%(name)s - %(levelname)s - %(message)s')
 
 def get_train_test_data(df):
+    """
+    This function divides data into train and test data and stores it into a database
+    """
+
     # divide data into feature set and target value
     y = df['status_group']
     X = df.drop(columns=['status_group'])
@@ -100,6 +105,10 @@ if __name__ == '__main__':
     # train model
     logging.info("Training model...")
     model, y_pred = train(X_train, X_test, y_train, y_test, clf)
+
+    # store predictions in pickle file
+    with open('results/predictions.pkl','wb') as f:
+        pkl.dump(y_pred, f)
 
     # determine model performance
     logging.info("Evaluating model...")

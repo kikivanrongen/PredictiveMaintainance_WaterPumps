@@ -3,7 +3,7 @@ import pandas as pd
 import sqlite3
 import logging 
 
-logging.basicConfig(filename='log.log', filemode='w', level=logging.INFO, format='%(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='analyze/log.log', filemode='w', level=logging.INFO, format='%(name)s - %(levelname)s - %(message)s')
 
 def extract_data():
     """

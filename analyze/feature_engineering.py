@@ -6,9 +6,13 @@ import logging
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from prince import PCA
 
-logging.basicConfig(filename='log.log', filemode='a', level=logging.INFO, format='%(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='analyze/log.log', filemode='a', level=logging.INFO, format='%(name)s - %(levelname)s - %(message)s')
 
 def pca(df):
+    """
+    This function performs Principal Component Analysis on numerical features to reduce the number of dimensions
+    """
+
     # Standardize data
     numeric_columns = df.select_dtypes(include=[np.number]).columns.tolist()
     scaler = StandardScaler()
@@ -30,6 +34,10 @@ def pca(df):
     return df
 
 def encode_features(df):
+    """
+    This function encodes features -- both label encoding and one hot encoding is used
+    """
+
     # drop columns with too many categories
     df = df.drop(columns=['installer', 'wpt_name', 'subvillage', 'ward'])
 

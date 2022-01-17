@@ -13,10 +13,10 @@ This project contains the following maps:
 We launch the Flask application using Docker. Build docker image from root directory with \
 `docker build -t <name>` \
 then run the application with \
-`docker run -it -p 5000:5000 <name>` \
+`docker run -it -p 5000:5000 <name>`
 
 # Re-train model
-If you are interested in reproducing the results, the following commands need to be executed. \
+If you are interested in reproducing the results, the following commands need to be executed:
 1. Extract, transform and load the data with
 `python etl.py`
 2. Feature engineering with

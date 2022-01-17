@@ -24,6 +24,6 @@ If you are interested in reproducing the results, the following commands can be 
 3. Train and evaluate the model with
 `python train_evaluate_model.py`
 
-Additionaly, the predictions are available via a REST API. Run \
+The predictions are stored in the results folder, but are also visible through a REST API, by running \
 `python app.py` \
-and the predictions are visible by performing a GET request (similar to getting started with Docker)
+(similar to getting started with Docker)

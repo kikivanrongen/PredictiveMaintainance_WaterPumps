@@ -11,7 +11,7 @@ This project contains the following maps:
 
 # Getting started (Docker installation)
 We launch the Flask application using Docker. Build docker image from root directory with \
-`docker build -t <name>` \
+`docker build -t <name> .` \
 then run the application with \
 `docker run -it -p 5000:5000 <name>`
 

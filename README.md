@@ -9,15 +9,21 @@ This project contains the following maps:
 4. images: all images regarding the model evaluation are saved to this folder
 5. results: folder to store pickle files containing the predictions
 
-# How to start
-Set up conda environment by running: 
-`conda create --name <env> --file requirements.txt`
+# Getting started (Docker installation)
+We launch the Flask application using Docker. Build docker image from root directory with \
+`docker build -t <name> .` \
+then run the application with \
+`docker run -it -p 5000:5000 <name>`
 
-Run the following commands
-`python etl.py`,
-`python feature_engineering.py` and
-`python train_evaluate_model.py`
+# Re-train model
+If you are interested in reproducing the results, the following commands need to be executed.
+Extract, transform and load the data with \
+`python etl.py`, \
+Feature engineering with \
+`python feature_engineering.py` and \
+Train and evaluate the model with \
+`python train_evaluate_model.py` \
 
 Additionaly, the predictions are available via a REST API. Run
 `python app.py`
-and the predictions are visible by performing a GET request
+and the predictions are visible by performing a GET request (similar to getting started with Docker)

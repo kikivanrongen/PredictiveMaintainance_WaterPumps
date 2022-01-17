@@ -11,7 +11,7 @@ This project contains the following maps:
 
 # Getting started (Docker installation)
 We launch the Flask application using Docker. Build docker image from root directory with \
-`docker build -t <name> .` \
+```docker build -t <name>```
 then run the application with \
 `docker run -it -p 5000:5000 <name>`
 
@@ -24,6 +24,6 @@ Feature engineering with \
 Train and evaluate the model with \
 `python train_evaluate_model.py` \
 
-Additionaly, the predictions are available via a REST API. Run
+Additionaly, the predictions are available via a REST API. Run \
 `python app.py`
 and the predictions are visible by performing a GET request (similar to getting started with Docker)

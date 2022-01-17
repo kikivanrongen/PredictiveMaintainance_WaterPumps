@@ -17,12 +17,12 @@ then run the application with \
 
 # Re-train model
 If you are interested in reproducing the results, the following commands need to be executed. \
-1. Extract, transform and load the data with \
-`python etl.py`, \
-2. Feature engineering with \
-`python feature_engineering.py` and \
-3. Train and evaluate the model with \
-`python train_evaluate_model.py` \
+1. Extract, transform and load the data with
+`python etl.py`
+2. Feature engineering with
+`python feature_engineering.py`
+3. Train and evaluate the model with
+`python train_evaluate_model.py`
 
 Additionaly, the predictions are available via a REST API. Run \
 `python app.py` \

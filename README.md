@@ -7,7 +7,7 @@ This project contains the following maps:
 2. *eda*: contains a notebook that is used to perform exploratory data analysis
 3. *analyze*: contains files for ETL, feature engineering and training & evaluating the classification model
 4. *images*: all images regarding the model evaluation are saved to this folder
-5. *results*: folder to store pickle files containing the predictions \
+5. *results*: folder to store pickle files containing the predictions
 
 # Getting started (Docker installation)
 We launch the Flask application using Docker. Build docker image from root directory with \

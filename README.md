@@ -2,7 +2,7 @@
 Building a machine learning model that is able to accurately predict maintenance on water pumps in Tanzania, based on the data of the Tanzanian Ministry of Water
 
 # Project overview
-This project contains the following maps:
+This project contains the following folders:
 1. *data*: containing the data files in csv format
 2. *eda*: contains a notebook that is used to perform exploratory data analysis
 3. *analyze*: contains files for ETL, feature engineering and training & evaluating the classification model

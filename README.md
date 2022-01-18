@@ -13,7 +13,7 @@ This project contains the following maps:
 We launch the Flask application using Docker. Build docker image from root directory with \
 `docker build -t <name> .` \
 then run the application with \
-`docker run -it -p 5000:5000 <name>`
+`docker run -it -d -p 5000:5000 <name>`
 
 # Re-train model
 If you are interested in reproducing the results, the following commands can be executed from the analyze folder:
